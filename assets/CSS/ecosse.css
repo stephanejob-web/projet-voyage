@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.hautdebody  {
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.hautdebody-image {
+    max-width: 100px; /* Adaptez cette valeur à la taille souhaitée */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav select {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Styles pour le conteneur des sections d'animaux */
+.animal-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Ajoute un espace entre les blocs */
+    background-color: #f9f9f9;
+    overflow: hidden; 
+}
+
+/* Styles pour les titres dans les sections d'animaux */
+.animal-section h2 {
+    color: #004d40;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 5px;
+}
+
+/*pour les images dans les conteneurs animal-section*/
+
+.animal-section .animal-image {
+    max-width: 100%; /* L'image ne dépasse pas la largeur du conteneur */
+    height: auto;    /* La hauteur s'ajuste automatiquement pour garder les proportions */
+    display: block;  /* Pour centrer l'image si besoin, et éviter l'espace sous l'image */
+    margin: 15px 0;  /* Marge au-dessus et en-dessous de l'image */
+    border-radius: 8px; /* Bords légèrement arrondis pour les images */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Légère ombre pour donner du relief */
+}
+/*pour les animaux*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Styles pour le contenu spécifique à la section */
+#content h2 {
+    color: #004d40;
+}
+
+#content li strong {
+    color: #00695c;
+}
+
+.basdebody{
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.basdebody p {
+    margin: 0;
+}
+
+/*responsive*/
+/* Pour les écrans plus petits (smartphones, jusqu'à 600px) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav select {
+        width: 100%; /* Le menu prend toute la largeur */
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .animal-section {
+        padding: 15px;
+    }
+
+    .animal-section h2 {
+        font-size: 1.2rem;
+    }
+}
