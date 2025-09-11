@@ -17,9 +17,40 @@
     width: 100%;
     display: flex;
     float: left;
-    padding: 10px 0 10px 0;
 }
 
 .navbar_elem {
     padding: 10px;
+    width: 100px;
+}
+
+.navbar_elem:hover {
+    background-color: aqua;
+}
+
+.navbar_drop {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar_drop:hover .navbar_drop_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_drop_menu {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: red;
+}
+
+.navbar_drop_menu a {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_drop_menu a:hover {
+    background-color: white;
 }
