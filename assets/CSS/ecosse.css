@@ -58,6 +58,15 @@ main {
     margin-bottom: 20px; /* Ajoute un espace entre les blocs */
     background-color: #f9f9f9;
     overflow: hidden; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles au survol (hover) */
+.animal-section:hover {
+    transform: translateY(-5px); /* Soulève le bloc de 5 pixels vers le haut */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmente l'ombre pour un effet 3D */
+    background-color: rgba(249, 249, 249, 0.7); /* Change le fond en une version semi-transparente */
 }
 
 /* Styles pour les titres dans les sections d'animaux */
@@ -109,6 +118,7 @@ li {
 }
 
 /*responsive*/
+
 /* Pour les écrans plus petits (smartphones, jusqu'à 600px) */
 @media (max-width: 600px) {
     header h1 {
@@ -135,4 +145,18 @@ li {
     .animal-section h2 {
         font-size: 1.2rem;
     }
+}
+/* Style pour les ordinateurs et les tablettes de taille minimale 768px et de taille maximale 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header, footer {
+    flex-direction: row; /* Le menu sera en ligne sur tablette et ordi */
+    justify-content: flex-end;
+  }
+}
+
+/* Style pour les ordinateurs et plus grands (à partir de 1536px) */
+@media (min-width: 1536px) {
+  body {
+    padding: 50px; /* On ajoute plus d'espace sur les grands écrans */
+  }
 }
