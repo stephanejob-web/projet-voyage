@@ -19,7 +19,7 @@
         <div class="header_bg"></div>
         <!-- navbar -->
         <nav class="navbar">
-            <div class="navbar_elem">Accueil</div>
+            <a class="navbar_elem" href="#">Accueil</a>
             <!-- menu déroulant -->
             <div class="navbar_drop">
                 <div class="navbar_elem"> Pays</div>
@@ -34,9 +34,37 @@
     </header>
 
     <!-- PAGE -->
-    <main>AAA</main>
+    <main>
+        <h1>Bienvenue!</h1>
+        <div>Message de bienvenue</div>
+
+        <!-- Blocks pays -->
+        <div class="body_container">
+            <!-- Vietnam -->
+            <div class="body_pays_block">
+                <div class="body_pays_img"></div>
+                <div class="body_pays_text"></div>
+            </div>
+            <!-- Ile de Wight -->
+            <div class="body_pays_block_rev">
+                <div class="body_pays_img"></div>
+                <div class="body_pays_text"></div>
+            </div>
+            <!-- Ecosse -->
+            <div class="body_pays_block">
+                <div class="body_pays_img"></div>
+                <div class="body_pays_text"></div>
+            </div>
+            <!-- Bali -->
+            <div class="body_pays_block_rev">
+                <div class="body_pays_img"></div>
+                <div class="body_pays_text"></div>
+            </div>
+        </div>
+    </main>
+
     <!-- FOOTER -->
-    <footer class="footer_bg">
+    <footer class="clear_float footer_bg">
         <!-- Block avec 4 liens pays + images -->
         <div class="footer_pays_block">
             <!-- Card Vietnam -->
@@ -60,7 +88,9 @@
             </a>
             <!-- card bali -->
             <a class="footer_pays_card" href="#">
-                <div class="footer_pays_img"></div>
+                <div class="footer_pays_img">
+                    <img class="footer_pays_img_fit" src="../assets/images/bali/bali_footer.jpg" alt="bali">
+                </div>
                 <div class="footer_pays_titre">Bali</div>
             </a>
 
