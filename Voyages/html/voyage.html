@@ -1,101 +1,155 @@
 <!DOCTYPE html>
-
-<html>
-
-<!-- HEAD -->
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/voyage.css">
-    <title>Bienvenue à note page de voyage!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bienvenue à notre page de voyage !</title>
+  <link rel="stylesheet" href="../assets/css/voyage.css" />
 </head>
 
-<!-- BODY-->
-
 <body class="nomargin">
-    <!-- HEADER -->
-    <header>
-        <div class="header_bg"></div>
-        <!-- navbar -->
-        <nav class="navbar">
-            <a class="navbar_elem" href="#">Accueil</a>
-            <!-- menu déroulant -->
-            <div class="navbar_drop">
-                <div class="navbar_elem"> Pays</div>
-                <div class="navbar_drop_menu">
-                    <a href="#">Vietnam</a>
-                    <a href="#">Île de Wight</a>
-                    <a href="#">Ecosse</a>
-                    <a href="#">Bali</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <!-- HEADER -->
+  <header>
+    <div class="header_bg" aria-hidden="true"></div>
 
-    <!-- PAGE -->
-    <main>
-        <h1>Bienvenue!</h1>
-        <div>Message de bienvenue</div>
+    <!-- NAVBAR -->
+    <nav class="navbar" aria-label="Navigation principale">
+      <a class="navbar_elem" href="#">Accueil</a>
 
-        <!-- Blocks pays -->
-        <div class="body_container">
-            <!-- Vietnam -->
-            <div class="body_pays_block">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
-            </div>
-            <!-- Ile de Wight -->
-            <div class="body_pays_block_rev">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
-            </div>
-            <!-- Ecosse -->
-            <div class="body_pays_block">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
-            </div>
-            <!-- Bali -->
-            <div class="body_pays_block_rev">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
-            </div>
+      <!-- Menu déroulant -->
+      <div class="navbar_drop">
+        <!-- Astuce accessibilité : bouton focusable -->
+        <button class="navbar_elem" aria-haspopup="true" aria-expanded="false">
+          Pays
+        </button>
+        <div class="navbar_drop_menu" role="menu" aria-label="Liste des pays">
+          <a role="menuitem" href="#">Vietnam</a>
+          <a role="menuitem" href="#">Île de Wight</a>
+          <a role="menuitem" href="#">Ecosse</a>
+          <a role="menuitem" href="#">Bali</a>
         </div>
-    </main>
+      </div>
+    </nav>
+  </header>
 
-    <!-- FOOTER -->
-    <footer class="clear_float footer_bg">
-        <!-- Block avec 4 liens pays + images -->
-        <div class="footer_pays_block">
-            <!-- Card Vietnam -->
-            <a class="footer_pays_card" href="#">
-                <div class="footer_pays_img">
-                    <!-- <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="hh"> -->
-                </div>
-                <div class="footer_pays_titre">Vietnam</div>
-            </a>
-            <!-- Card isle of wight -->
-            <a class="footer_pays_card" href="#">
-                <div class="footer_pays_img">
-                    <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="hh">
-                </div>
-                <div class="footer_pays_titre">Île de Wight</div>
-            </a>
-            <!-- card écosse -->
-            <a class="footer_pays_card" href="#">
-                <div class="footer_pays_img"></div>
-                <div class="footer_pays_titre">Ecosse</div>
-            </a>
-            <!-- card bali -->
-            <a class="footer_pays_card" href="#">
-                <div class="footer_pays_img">
-                    <img class="footer_pays_img_fit" src="../assets/images/bali/bali_footer.jpg" alt="bali">
-                </div>
-                <div class="footer_pays_titre">Bali</div>
-            </a>
-
+  <!-- CONTENU -->
+  <main>
+    <section class="body_container" aria-label="Destinations">
+      <!-- Vietnam -->
+      <article class="body_pays_block">
+        <div class="body_pays_img" role="img" aria-label="Vietnam">
+          <!-- <img class="body_pays_img_fit" src="../assets/images/vietnam/hero.jpg" alt="Paysage du Vietnam"> -->
         </div>
-    </footer>
+        <div class="body_pays_text">
+          <h2>Vietnam</h2>
+          <p>Découvrez la beauté des rizières en terrasse, la cuisine de rue et les villes dynamiques du Vietnam.</p>
+          <p><a class="navbar_elem" href="#">En savoir plus</a></p>
+        </div>
+      </article>
+
+      <!-- Île de Wight -->
+      <article class="body_pays_block body_pays_block_rev">
+        <div class="body_pays_img" role="img" aria-label="Île de Wight">
+          <!-- <img class="body_pays_img_fit" src="../assets/images/ile_de_wight/hero.jpg" alt="Falaises de l’Île de Wight"> -->
+        </div>
+        <div class="body_pays_text">
+          <h2>Île de Wight</h2>
+          <p>Falaises calcaires, sentiers côtiers et ambiance insulaire : une escapade nature au large de l’Angleterre.</p>
+          <p><a class="navbar_elem" href="#">En savoir plus</a></p>
+        </div>
+      </article>
+
+      <!-- Écosse -->
+      <article class="body_pays_block">
+        <div class="body_pays_img" role="img" aria-label="Ecosse">
+          <!-- <img class="body_pays_img_fit" src="../assets/images/ecosse/hero.jpg" alt="Highlands d’Écosse"> -->
+        </div>
+        <div class="body_pays_text">
+          <h2>Ecosse</h2>
+          <p>Des Highlands mystiques aux lochs emblématiques, partez explorer l’Écosse sauvage et authentique.</p>
+          <p><a class="navbar_elem" href="#">En savoir plus</a></p>
+        </div>
+      </article>
+
+      <!-- Bali -->
+      <article class="body_pays_block body_pays_block_rev">
+        <div class="body_pays_img" role="img" aria-label="Bali">
+          <!-- <img class="body_pays_img_fit" src="../assets/images/bali/hero.jpg" alt="Rizières en terrasses de Bali"> -->
+        </div>
+        <div class="body_pays_text">
+          <h2>Bali</h2>
+          <p>Rizières en terrasses, temples hindous et plages : Bali vous accueille avec sa culture et sa douceur de vivre.</p>
+          <p><a class="navbar_elem" href="#">En savoir plus</a></p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer_bg">
+    <nav class="footer_pays_block" aria-label="Liens rapides vers les pays">
+      <!-- Card Vietnam -->
+      <a class="footer_pays_card" href="#">
+        <div class="footer_pays_img" aria-hidden="true">
+          <!-- <img class="footer_pays_img_fit" src="../assets/images/vietnam/vietnam_footer.jpg" alt=""> -->
+        </div>
+        <div class="footer_pays_titre">Vietnam</div>
+      </a>
+
+      <!-- Card Île de Wight -->
+      <a class="footer_pays_card" href="#">
+        <div class="footer_pays_img">
+          <img
+            class="footer_pays_img_fit"
+            src="../assets/images/ile_de_wight/disnosaur_island.jpg"
+            alt="Île de Wight - Dinosaur Island"
+          />
+        </div>
+        <div class="footer_pays_titre">Île de Wight</div>
+      </a>
+
+      <!-- Card Écosse -->
+      <a class="footer_pays_card" href="#">
+        <div class="footer_pays_img" aria-hidden="true">
+          <!-- <img class="footer_pays_img_fit" src="../assets/images/ecosse/ecosse_footer.jpg" alt=""> -->
+        </div>
+        <div class="footer_pays_titre">Ecosse</div>
+      </a>
+
+      <!-- Card Bali -->
+      <a class="footer_pays_card" href="#">
+        <div class="footer_pays_img">
+          <img
+            class="footer_pays_img_fit"
+            src="../assets/images/bali/bali_footer.jpg"
+            alt="Rizières de Bali"
+          />
+        </div>
+        <div class="footer_pays_titre">Bali</div>
+      </a>
+    </nav>
+  </footer>
+
+  <!-- Script léger pour l’état aria du bouton dropdown -->
+  <script>
+    const drop = document.querySelector('.navbar_drop');
+    const btn = drop?.querySelector('button.navbar_elem');
+    const menu = drop?.querySelector('.navbar_drop_menu');
+    if (btn && menu) {
+      const setExpanded = (val) => btn.setAttribute('aria-expanded', val ? 'true' : 'false');
+      btn.addEventListener('click', (e) => {
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        setExpanded(!open);
+        // L’ouverture/fermeture visuelle est gérée par :hover / :focus-within en CSS,
+        // ici on ne fait que tenir l’attribut ARIA à jour.
+      });
+      document.addEventListener('click', (e) => {
+        if (!drop.contains(e.target)) setExpanded(false);
+      });
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') setExpanded(false);
+      });
+    }
+  </script>
 </body>
-
 </html>
