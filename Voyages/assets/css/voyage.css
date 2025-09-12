@@ -1,0 +1,232 @@
+/* STYLES POUR TOUT LE SITE */
+
+.nomargin {
+    margin: 0;
+}
+
+.clear_float {
+    clear: both;
+}
+
+/* HEADER -------------------------------------------------------------------- */
+
+.header_bg {
+    width: 100%;
+    height: 200px;
+    background-color: burlywood;
+}
+
+/* Navbar */
+.navbar {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    float: left;
+}
+
+.navbar_elem {
+    padding: 10px;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_elem:hover {
+    background-color: aqua;
+}
+
+/* Menu déroulant */
+.navbar_drop {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar_drop_menu {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    background-color: red;
+    z-index: 10;
+}
+
+.navbar_drop:hover .navbar_drop_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_drop_menu a {
+    padding: 20px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar_drop_menu a:hover {
+    background-color: white;
+}
+
+.navbar_drop:hover .navbar_elem {
+    background-color: aqua;
+}
+
+/* BODY ------------------------------------------------------------------------------------ */
+
+.body_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px 0 5px 0;
+}
+
+.body_pays_block {
+    display: flex;
+    float: left;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+}
+
+.body_pays_block_rev {
+    display: flex;
+    float: left;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.body_pays_img {
+    border-radius: 50%;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.body_pays_img_fit {
+    object-fit: contain;
+}
+
+.body_pays_text {
+    background-color: gainsboro;
+    color: black;
+    border-radius: 20px;
+    width: 600px;
+    height: 400px;
+    align-self: center;
+    margin: 0 20px 0 20px;
+}
+
+/* responsive */
+/* 📱 Mobile */
+@media (max-width: 600px) {
+    .body_pays_block {
+        flex-direction: column;
+        float: none;
+        align-items: center;
+        padding: 5px 0 5px 0;
+    }
+
+    .body_pays_block_rev {
+        flex-direction: column;
+        align-items: center;
+        float: none;
+        padding: 5px 0 5px 0;
+    }
+
+    .body_pays_text {
+        width: calc(600px * 0.6);
+        height: calc(400px * 0.6);
+        margin: 10px 0 10px 0;
+    }
+
+    .body_pays_img {
+        width: calc(500px * 0.6);
+        height: calc(500px * 0.6);
+    }
+}
+
+/* 💻 Laptop */
+@media (min-width: 1024px) {}
+
+/* 🖥️ Desktop */
+@media (min-width: 1280px) {}
+
+/* 🖥️🖥️ Très grands écrans */
+@media (min-width: 1920px) {
+    .body_pays_img {
+        width: 1000px;
+        height: 1000px;
+    }
+}
+
+/* FOOTER --------------------------------------------------------------------------------- */
+
+.footer_bg {
+    background-color: rgb(155, 122, 103);
+    width: 100%;
+    height: 400px;
+}
+
+.footer_pays_block {
+    display: flex;
+    float: left;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer_pays_card {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px 0 10px;
+    transition: transform 1s ease;
+    text-decoration: none;
+}
+
+.footer_pays_card:hover {
+    transform: scale(1.1);
+}
+
+.footer_pays_img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: black solid 3px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.footer_pays_img_fit {
+    object-fit: contain;
+    width: 400px;
+}
+
+.footer_pays_titre {
+    background-color: white;
+    border-radius: 10px;
+    border: black solid 3px;
+    padding: 8px;
+    color: black;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .footer_pays_block {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: fit-content;
+    }
+
+    .footer_pays_img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .footer_bg {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+}
