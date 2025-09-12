@@ -115,7 +115,7 @@
 
 /* responsive */
 /* 📱 Mobile */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .body_pays_block {
         flex-direction: column;
         float: none;
@@ -208,4 +208,24 @@
     padding: 8px;
     color: black;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .footer_pays_block {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: fit-content;
+    }
+
+    .footer_pays_img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .footer_bg {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding-bottom: 20px;
+    }
 }
