@@ -10,8 +10,13 @@ body {
     background-attachment: fixed;    /* L'image reste fixe lors du défilement */
     background-repeat: no-repeat;    /* L'image ne se répète pas */
     color: #333;
+    animation: fadeIn 1.5s ease-in-out; /*animation lors du changement de page*/
 }
-
+/*pour une animation lors du changement de page*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 .hautdebody  {
     background-color: rgba(0, 77, 64, 0.8); /*un peu transparent pour voir l'image dessous*/
     color: #fff;
