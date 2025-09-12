@@ -46,6 +46,7 @@
     position: absolute;
     min-width: 200px;
     background-color: red;
+    z-index: 10;
 }
 
 .navbar_drop:hover .navbar_drop_menu {
