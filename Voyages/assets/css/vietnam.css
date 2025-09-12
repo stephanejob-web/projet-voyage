@@ -10,7 +10,11 @@
 
 main {
   min-height: 100vh;
+<<<<<<< HEAD
   margin: 50px;
+=======
+  margin: 30px;
+>>>>>>> origin/developpe
 }
 
 header {
