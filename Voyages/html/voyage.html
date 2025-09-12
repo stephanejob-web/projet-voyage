@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/voyage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Bienvenue à notre page de voyage!</title>
 </head>
 
@@ -90,6 +91,44 @@
                 </div>
             </div>
         </div>
+        <div class="formulaire">
+            <h2>Pour nous contacter</h2>
+            <form action="#" method="POST" class="contact-form">
+
+            <div class="form-row">
+            <div class="form-group">
+                <label for="civility">Civilité</label>
+                <select id="civility" name="civility">
+                <option value="mme">Mme</option>
+                <option value="m">M</option>
+                </select>
+            </div>
+                <div class="form-group">
+                    <label for="lastname">Nom *</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Prénom *</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                </div>
+                    <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                <div class="form-group message-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                 <button type="submit" class="mon-bouton-envoi">Envoyer</button> 
+                 <br>
+        </div>
     </main>
 
     <!-- FOOTER -->
@@ -124,7 +163,6 @@
                 </div>
                 <div class="footer_pays_titre">Bali</div>
             </a>
-            
         </div>
     </footer>
 </body>

@@ -161,6 +161,81 @@
     }
 }
 
+.formulaire {
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    flex: 1; 
+    min-width: 100px; 
+    max-width: 350px;
+    margin: 20px auto 50px auto;
+}
+
+/* Styles pour le formulaire de contact dans la page contact*/
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Les éléments enfants (form-row, form-group, button) s'aligneront en colonne */
+    gap: 15px; /* Espace entre chaque ligne/groupe de champs */
+}
+.form-group input,
+.form-group select {
+    width: 100%; /* S'assure que le champ s'étend pour remplir l'espace disponible */
+    padding: 10px; /* Un padding uniforme */
+    border: 1px solid #ccc; /* Une bordure légère et uniforme */
+    border-radius: 4px; /* Des coins arrondis */
+    font-size: 1.5rem; /* Taille de police cohérente */
+    box-sizing: border-box; /* IMPORTANT : Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Style des lignes du formulaire (Flexbox) */
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* Permet aux champs de passer à la ligne si l'écran est trop petit */
+}
+
+/* Style des groupes de champs individuels */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Le label sera au-dessus de l'input */
+    flex: 1; /* Chaque groupe prend une part égale de l'espace sur la ligne */
+    min-width: 150px; /* Largeur minimale avant que les champs passent à la ligne */
+}
+
+/* Style des champs de saisie (input, select, textarea) */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%; /* S'adapte à la largeur du form-group */
+    padding: 2px;
+    border: 1px solid black;  /*couleur orange du contour de mes champs du formulaire*/
+    border-radius: 5px; /*un peu arrondi*/
+}
+
+/* Style spécifique pour la zone de message */
+.contact-form textarea {
+    resize: vertical; /* Permet à l'utilisateur de redimensionner verticalement */
+}
+/*le bouton Envoyer*/
+.mon-bouton-envoi {
+    background-color:rgb(155, 122, 103); /* Couleur de fond marron comme le footer*/
+    color: rgb(221, 221, 236); /* Texte en blanc */
+    padding: 10px 30px; /* Espacement intérieur */
+    border: 2px solid  black; /*couleur contour*/
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Indique que c'est cliquable */
+    font-size: 20px; /* Taille de la police */
+    transition: background-color 0.3s ease; /* Transition douce pour le survol */
+}
+/*Le survol de mon bouton Envoyer*/
+.mon-bouton-envoi:hover {
+    background-color:  burlywood; 
+}
+
+
 /* 💻 Laptop */
 @media (min-width: 1024px) {}
 
