@@ -1,10 +1,9 @@
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image:url('../image-ecosse/ecossehighland.jpg');
+    background-image:url('../images/ecosse/ecossehighland.jpg');
     background-size: cover;          /* L'image couvre toute la zone */
     background-position: center;     /* L'image est centrée */
     background-attachment: fixed;    /* L'image reste fixe lors du défilement */
