@@ -8,7 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/voyage.css">
-    <title>Bienvenue à note page de voyage!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Bienvenue à notre page de voyage!</title>
 </head>
 
 <!-- BODY-->
@@ -16,7 +17,14 @@
 <body class="nomargin">
     <!-- HEADER -->
     <header>
-        <div class="header_bg"></div>
+        <div class="header_bg">
+            <div class="header_grid">
+                <div class="header_text">VOYAGES</div>
+                <div class="logo_container">
+                    <img class="logo" src="../assets/images/plane_logo.svg" alt="logo">
+                </div>
+            </div>
+        </div>
         <!-- navbar -->
         <nav class="navbar">
             <a class="navbar_elem" href="#">Accueil</a>
@@ -35,10 +43,10 @@
 
     <!-- PAGE -->
     <main>
-        <h1>Bienvenue</h1>
-        <div class="bienvenue"> Notre site de voyage vous invite à découvrir des expériences uniques, 
-            de l'ambiance spirituelle de Bali à l'effervescence du Vietnam, 
-            en passant par le charme tranquille de l'Île de Wight et la nature sauvage d'Écosse. 
+        <h1>Bienvenue ! </h1>
+        <div class="bienvenue"> Notre site de voyage vous invite à découvrir des expériences uniques,
+            de l'ambiance spirituelle de Bali à l'effervescence du Vietnam,
+            en passant par le charme tranquille de l'Île de Wight et la nature sauvage d'Écosse.
             Nous vous offrons des aventures authentiques, conçues pour les esprits curieux et les amoureux de la nature.
         </div>
 
@@ -46,24 +54,93 @@
         <div class="body_container">
             <!-- Vietnam -->
             <div class="body_pays_block">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
+                <div class="body_pays_img">
+                    <img class="body_pays_img_fit" src="../assets/images/vietnam/vietnam.jpg" alt="vietnam">
+                </div>
+                <div class="body_pays_text">
+                    Le Vietnam, entre tradition et modernité : Plongez au cœur d'un pays fascinant où se mêlent
+                    l'agitation des villes historiques,
+                    la splendeur intemporelle de la Baie d'Ha Long
+                    et la quiétude des rizières du Mékong. Le Vietnam est un voyage culinaire et humain, riche en
+                    émotions et en rencontres inoubliables.
+                </div>
             </div>
             <!-- Ile de Wight -->
             <div class="body_pays_block_rev">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
+                <div class="body_pays_img">
+                    <img class="body_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg"
+                        alt="iledewight">
+                </div>
+                <div class="body_pays_text">
+                    L'Île de Wight, le joyau caché de l'Angleterre : Changez de décor avec l'Île de Wight, un havre de
+                    paix côtier. Ses falaises blanches,
+                    ses plages dorées et ses villages pittoresques en font la destination parfaite pour une escapade
+                    relaxante, pleine de charme et d'authenticité britannique.
+                </div>
             </div>
             <!-- Ecosse -->
             <div class="body_pays_block">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
+                <div class="body_pays_img">
+                    <img class="body_pays_img_fit" src="../assets/images/ecosse/ecossehighland.jpg" alt="ecosse">
+                </div>
+                <div class="body_pays_text">
+                    L'Écosse sauvage, royaume de la faune : Pour les amoureux de la nature,
+                    l'Écosse offre une expérience inégalable.
+                    Partez à la découverte de ses lochs mystérieux et de ses highlands imposants ;
+                    pour observer des espèces emblématiques comme le cerf, le macareux et peut-être même les majestueux
+                    aigles royaux.
+                </div>
             </div>
             <!-- Bali -->
             <div class="body_pays_block_rev">
-                <div class="body_pays_img"></div>
-                <div class="body_pays_text"></div>
+                <div class="body_pays_img">
+                    <img class="body_pays_img_fit" src="../assets/images/bali/bali_footer.jpg" alt="bali">
+                </div>
+                <div class="body_pays_text">
+                    Bali, l'Île des Dieux : Laissez-vous enchanter par les rizières en terrasses
+                    qui caressent le ciel, les volcans majestueux et l'hospitalité
+                    d'une culture profondément spirituelle. Bali est une invitation à la sérénité,
+                    au bien-être et à la découverte d'une nature luxuriante et vibrante.
+                </div>
             </div>
+        </div>
+        <div class="formulaire">
+            <h2>Pour nous contacter</h2>
+            <form action="#" method="POST" class="contact-form">
+
+            <div class="form-row">
+            <div class="form-group">
+                <label for="civility">Civilité</label>
+                <select id="civility" name="civility">
+                <option value="mme">Mme</option>
+                <option value="m">M</option>
+                </select>
+            </div>
+                <div class="form-group">
+                    <label for="lastname">Nom *</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Prénom *</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                </div>
+                    <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                <div class="form-group message-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                 <button type="submit" class="mon-bouton-envoi">Envoyer</button> 
+                 <br>
         </div>
     </main>
 
@@ -72,32 +149,34 @@
         <!-- Block avec 4 liens pays + images -->
         <div class="footer_pays_block">
             <!-- Card Vietnam -->
-            <a class="footer_pays_card" href="#">
+            <a class="footer_pays_card" href="vietnam.html">
                 <div class="footer_pays_img">
-                    <!-- <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="hh"> -->
+                    <img class="footer_pays_img_fit" src="../assets/images/vietnam/vietnam.jpg" alt="vietnam">
                 </div>
                 <div class="footer_pays_titre">Vietnam</div>
             </a>
             <!-- Card isle of wight -->
-            <a class="footer_pays_card" href="#">
+            <a class="footer_pays_card" href="ile_wight.html">
                 <div class="footer_pays_img">
-                    <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="hh">
+                    <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg"
+                        alt="iledewight">
                 </div>
                 <div class="footer_pays_titre">Île de Wight</div>
             </a>
             <!-- card écosse -->
-            <a class="footer_pays_card" href="#">
-                <div class="footer_pays_img"></div>
+            <a class="footer_pays_card" href="ecosse.html">
+                <div class="footer_pays_img">
+                    <img class="footer_pays_img_fit" src="../assets/images/ecosse/ecossehighland.jpg" alt="ecosse">
+                </div>
                 <div class="footer_pays_titre">Ecosse</div>
             </a>
             <!-- card bali -->
-            <a class="footer_pays_card" href="#">
+            <a class="footer_pays_card" href="bali.html">
                 <div class="footer_pays_img">
                     <img class="footer_pays_img_fit" src="../assets/images/bali/bali_footer.jpg" alt="bali">
                 </div>
                 <div class="footer_pays_titre">Bali</div>
             </a>
-
         </div>
     </footer>
 </body>
