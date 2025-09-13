@@ -118,7 +118,7 @@ Ce tableau montre l’avancement de chaque tâche :
 
 Convention de nommage :  
 
-issue-<numéro>-<titre-court>
+issue-(numéro)-(titre court)
 
 
 Exemples :  
