@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/voyage.css">
     <link rel="stylesheet" href="../assets/css/ile_wight.css">
-    <title>Bienvenue à note page de voyage!</title>
+    <title>L'Île de Wight</title>
 </head>
 
 <!-- BODY-->
@@ -17,65 +17,102 @@
 <body class="nomargin my_font" style="width: 100vw;">
     <!-- HEADER -->
     <header>
-        <div class="header_bg"></div>
+        <div class="header_bg">
+            <div class="header_grid">
+                <div class="header_text">VOYAGES</div>
+                <div class="logo_container">
+                    <img class="logo" src="../assets/images/plane_logo.svg" alt="logo">
+                </div>
+            </div>
+        </div>
         <!-- navbar -->
-        <nav class="navbar" style="margin-bottom: 30px;">
-            <a class="navbar_elem" href="#">Accueil</a>
+        <nav class="navbar">
+            <a class="navbar_elem" href="../html/index.html">Accueil</a>
             <!-- menu déroulant -->
             <div class="navbar_drop">
                 <div class="navbar_elem"> Pays</div>
                 <div class="navbar_drop_menu">
-                    <a href="#">Vietnam</a>
-                    <a href="#">Île de Wight</a>
-                    <a href="#">Ecosse</a>
-                    <a href="#">Bali</a>
+                    <a href="../html/vietnam.html">Vietnam</a>
+
+                    <a href="../html/ecosse.html">Ecosse</a>
+                    <a href="../html/bali.html">Bali</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- PAGE -->
-    <main class="main_grid">
+    <main class="main_grid clear_float">
+        <h1 class="ile_bienvenue">Bienvenue sur la page de l'Île de Wight !</h1>
+
         <!-- Section 1 -->
-        <div class="gros_titre">HHH</div>
-        <div class="block_main">
-            <div class="block_title_right"></div>
-            <div class="block_sub">
-                <div class="desc_block"></div>
-                <div class="img_block">
-                    <img class="img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="dino">
+        <section>
+            <h2 class="gros_titre clear_float">Un lieu riche de paléontologie</h2>
+            <div class="block_main">
+                <div class="block_title_right">L'île des dinosaures</div>
+                <div class="block_sub">
+                    <div class="desc_block">
+                        <div class="desc_text">
+                            Un musée paléontologique sur les dinosaures, dont certains
+                            peuvent être trouvés sur l'île.
+                        </div>
+                    </div>
+                    <div class="img_block">
+                        <img class="img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="dino">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="block_main">
-            <div class="block_title_left"></div>
-            <div class="block_sub_rev">
-                <div class="desc_block"></div>
-                <div class="img_block">
-                    <img class="img_fit" src="../assets/images/ile_de_wight/fossiles.jpg" alt="fossil">
+            <div class="block_main">
+                <div class="block_title_left">Des fossiles partout !</div>
+                <div class="block_sub_rev">
+                    <div class="desc_block">
+                        <div class="desc_text">
+                            Des fossiles peuvent être trouvés sur l'île à même les plages.
+                            L'on peut particulièrement trouver des fossiles d'ammonites mais
+                            aussi des fossiles de ptérosaures !
+                        </div>
+                    </div>
+                    <div class="img_block">
+                        <img class="img_fit" src="../assets/images/ile_de_wight/fossiles.jpg" alt="fossil">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!-- Section 2 -->
-        <div class="gros_titre">HHH</div>
-        <div class="block_main">
-            <div class="block_title_right"></div>
-            <div class="block_sub">
-                <div class="desc_block"></div>
-                <div class="img_block">
-                    <img class="img_fit" src="../assets/images/ile_de_wight/needles.jpg" alt="needles">
+        <div class="clear_float"></div>
+        <section style="margin-top: 4vw;">
+            <h2 class="gros_titre clear_float">Des formation rocheuses intéressantes</h2>
+            <div class="block_main">
+                <div class="block_title_right">Les aiguilles</div>
+                <div class="block_sub">
+                    <div class="desc_block">
+                        <div class="desc_text">
+                            Les aiguilles sont des aiguilles rocheuses, ainsi qu'une falaise,
+                            faites entièrement de craie.
+                        </div>
+                    </div>
+                    <div class="img_block">
+                        <img class="img_fit" src="../assets/images/ile_de_wight/needles.jpg" alt="needles">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="block_main">
-            <div class="block_title_left"></div>
-            <div class="block_sub_rev">
-                <div class="desc_block"></div>
-                <div class="img_block">
-                    <img class="img_fit" src="../assets/images/ile_de_wight/rainbow sands.jpg" alt="rainbow sands">
+            <div class="block_main">
+                <div class="block_title_left">Les sables arc-en-ciel</div>
+                <div class="block_sub_rev">
+                    <div class="desc_block">
+                        <div class="desc_text">
+                            Les sables arc-en-ciel sont des sables de diverses couleurs
+                            qui se trouvent tous sur une même falaise.
+                        </div>
+                    </div>
+                    <div class="img_block">
+                        <img class="img_fit" src="../assets/images/ile_de_wight/rainbow sands.jpg" alt="rainbow sands">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -83,26 +120,28 @@
         <!-- Block avec 4 liens pays + images -->
         <div class="footer_pays_block">
             <!-- Card Vietnam -->
-            <a class="footer_pays_card" href="#">
+            <a class="footer_pays_card" href="../html/vietnam.html">
                 <div class="footer_pays_img">
-                    <!-- <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="hh"> -->
+                    <img class="footer_pays_img_fit" src="../assets/images/vietnam/vietnam.jpg" alt="vietnam">
                 </div>
                 <div class="footer_pays_titre">Vietnam</div>
             </a>
             <!-- Card isle of wight -->
-            <a class="footer_pays_card" href="#">
+            <a class="footer_pays_card" href="../html/ile_wight.html">
                 <div class="footer_pays_img">
-                    <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="hh">
+                    <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg" alt="ile de wight">
                 </div>
                 <div class="footer_pays_titre">Île de Wight</div>
             </a>
             <!-- card écosse -->
-            <a class="footer_pays_card" href="#">
-                <div class="footer_pays_img"></div>
+            <a class="footer_pays_card" href="../html/ecosse.html">
+                <div class="footer_pays_img">
+                    <img class="footer_pays_img_fit" src="../assets/images/ecosse/ecossehighland.jpg" alt="ecosse">
+                </div>
                 <div class="footer_pays_titre">Ecosse</div>
             </a>
             <!-- card bali -->
-            <a class="footer_pays_card" href="#">
+            <a class="footer_pays_card" href="../html/bali.html">
                 <div class="footer_pays_img">
                     <img class="footer_pays_img_fit" src="../assets/images/bali/bali_footer.jpg" alt="bali">
                 </div>
