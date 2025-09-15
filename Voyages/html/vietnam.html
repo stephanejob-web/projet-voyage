@@ -6,9 +6,35 @@
 
     <title>VIETNAM</title>
     <link rel="stylesheet" href="../assets/css/vietnam.css" />
+    <link rel="stylesheet" href="../assets/css/voyage.css">
   </head>
   <body>
     <main>
+      <!-- HEADER -->
+    <header>
+        <div class="header_bg">
+            <div class="header_grid">
+                <div class="header_text">VOYAGES</div>
+                <div class="logo_container">
+                    <img class="logo" src="../assets/images/plane_logo.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar">
+            <a class="navbar_elem" href="../html/index.html">Accueil</a>
+            <!-- menu déroulant -->
+            <div class="navbar_drop">
+                <div class="navbar_elem"> Pays</div>
+                <div class="navbar_drop_menu">
+                    <a href="../html/vietnam.html">Vietnam</a>
+                    <a href="../html/ile_wight.html">Île de Wight</a>
+                    <a href="../html/ecosse.html">Ecosse</a>
+                    <a href="../html/bali.html">Bali</a>
+                </div>
+            </div>
+        </nav>
+    </header>
       <header>
         <h1 class="titre-header">LE VIETNAM</h1>
       </header>
@@ -182,5 +208,40 @@
 
       </section>
     </main>
+    <!-- FOOTER -->
+    <footer class="clear_float footer_bg">
+        <!-- Block avec 4 liens pays + images -->
+        <div class="footer_pays_block">
+            <!-- Card Vietnam -->
+            <a class="footer_pays_card" href="vietnam.html">
+                <div class="footer_pays_img">
+                    <img class="footer_pays_img_fit" src="../assets/images/vietnam/vietnam.jpg" alt="vietnam">
+                </div>
+                <div class="footer_pays_titre">Vietnam</div>
+            </a>
+            <!-- Card isle of wight -->
+            <a class="footer_pays_card" href="ile_wight.html">
+                <div class="footer_pays_img">
+                    <img class="footer_pays_img_fit" src="../assets/images/ile_de_wight/disnosaur_island.jpg"
+                        alt="iledewight">
+                </div>
+                <div class="footer_pays_titre">Île de Wight</div>
+            </a>
+            <!-- card écosse -->
+            <a class="footer_pays_card" href="ecosse.html">
+                <div class="footer_pays_img">
+                    <img class="footer_pays_img_fit" src="../assets/images/ecosse/ecossehighland.jpg" alt="ecosse">
+                </div>
+                <div class="footer_pays_titre">Ecosse</div>
+            </a>
+            <!-- card bali -->
+            <a class="footer_pays_card" href="bali.html">
+                <div class="footer_pays_img">
+                    <img class="footer_pays_img_fit" src="../assets/images/bali/bali_footer.jpg" alt="bali">
+                </div>
+                <div class="footer_pays_titre">Bali</div>
+            </a>
+        </div>
+    </footer>
   </body>
 </html>
